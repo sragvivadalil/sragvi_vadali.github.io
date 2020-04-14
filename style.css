@@ -1,0 +1,515 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #800000 ;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.logo {
+  color: rgb(226,226,226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+
+
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links li {
+  list-style: none;
+
+}
+.nav-links a {
+  color:rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size; 10px;
+
+}
+/*
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226,226,226);
+  margin: 5px;
+
+}
+*/
+@media screen and (max-width:1100px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+/*
+@media screen and (max-width:768px) {
+  .body{
+    over-flow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: grey;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+
+  }
+
+}
+.nav-active {
+  transform: translate(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity; 1;
+    transform: translateX(0px);
+  }
+}
+*/
+a{
+  text-decoration: none;
+  color: #dc143c;
+  text-decoration: underline;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+
+.btn:hover{
+  background-color:#800000;
+}
+
+.image0{
+  width:100% auto;
+  height: 100%;
+  background-image: url('Images/home.png ');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+
+}
+
+.image1{
+  width:100% auto;
+  height: 100%;
+  background-image: url('Images/temple.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+
+}
+
+.image2{
+  width:100% auto;
+  height: 100%;
+  background-image: url('Images/project.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+
+}
+
+.image3{
+  width:100% auto;
+  height: 100%;
+  background-image: url('Images/resume.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+
+}
+
+.text{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color:white;
+}
+.about-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex direction: row;
+  width: 100%;
+
+}
+
+.contact-area, .project-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex direction: row;
+  width: 100%;
+
+
+}
+
+.text-part {
+  width: 65%;
+  height: 80%;
+  padding-top: 10vh;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Poppins';
+}
+p {
+  font-size: 24px;
+  line-height: 50px;
+
+}
+
+.project-area {
+  background: #152238;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+.btn {
+  border: 1px solid #800000;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Poppins"
+  cursor: pointer;
+  margin: 10px;
+  transition: 3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1 {
+  color: #800000;
+}
+.btn1:hover,{
+  color: #800000;
+  background: #4d4d4d;
+
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;0%
+  background: #4d4d4d;
+  z-index: -1;
+  transition: 0.5s;
+
+}
+
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  height: 180%;
+}
+
+.image {
+  text-align: center;
+  padding: 10vh;
+  border-radius: 30%;
+}
+
+.projectimg {
+  display: inline;
+  height:50%;
+  min-height: 20px;
+  width: 50%;
+  min-width: 250px;
+  margin:10px;
+	border-radius:2px;
+
+}
+
+.rotateimg180 {
+  /*-webkit-transform:rotate(900deg);
+  -moz-transform: rotate(900deg);
+  -ms-transform: rotate(900deg);
+  -o-transform: rotate(90deg);*/
+  transform: rotate(180deg);
+  width: 80vh;
+  height: 100vh;
+}
+
+#header {
+  padding-left: 35vh;
+  padding-right: 35vh;
+  padding-top: 40vh;
+  text-size: 20vh;
+
+}
+
+#text {
+  padding-left: 50vh;
+  padding-right: 45vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-size: 10vh;
+}
+
+.images {
+  width: 3%;
+  height: 3%;
+  margin-right: 100vh;
+  margin-left: 100vh;
+}
+
+body, #slider, .wrap , .slide-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position:relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1{
+  background-image: url('Images/temple.jpg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.slide2 {
+    background-image: url('Images/robotics.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.slide3 {
+    background-image: url('Images/cricket.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  left: 0;
+  margin-top: -40px;
+  margin-left: 30px;
+  border-color: transparent #fff transparent transparent;
+
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  right: 0;
+  margin-top: -30px;
+  margin-right: 30px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  padding: 30px;
+  background: rgba(138,10,10,0.8);
+}
+
+.caption h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 5vh;
+}
+
+.caption p {
+  margin: 1%;
+  padding: 0;
+  color: #fff;
+  font-size: 3vh;
+  line-height: 1;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  color:rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size; 15px;
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(138,10,10,0.8);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color:rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size; 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.slide1csp{
+  background-image: url('Images/mit.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.slide2csp{
+  background-image: url('Images/text_adventure.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.slide3csp{
+  background-image: url('Images/acustore.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.slide1poe{
+  background-image: url('Images/poe_winch.jpg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.slide2poe{
+  background-image: url('Images/poe_salad.jpg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.slide3poe{
+  background-image: url('Images/poe_insulation.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.slide1res{
+  background-image: url('Images/nif.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+.slide2res{
+  background-image: url('Images/jet.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.slide3res{
+  background-image: url('Images/nuc.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}

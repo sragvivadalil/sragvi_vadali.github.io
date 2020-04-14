@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #5d5d5d;
+}
+
+.preload {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 50px;
+    text-shadow: -1px 2px 2px #000;
+    text-align: center;
+    color: #eeeeff;
+    margin-top: 15%;
+}
+.loader-frame {
+    width: 70px;
+    height: 70px;
+    margin:auto;
+    position: relative;
+}
+.loader1, .loader2 {
+    position:absolute;
+    border: 5px solid transparent;
+    border-radius: 100%;
+}
+
+.loader1{
+    text-align: center;
+    width: 305px;
+    height: 305px;
+    border-top:7px solid #373737;
+    border-bottom: 7px solid #373737 ;
+    margin-left: 39%;
+    animation:clockwisespin 2s linear 3;
+}
+
+.loader2{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    margin-left: 39%;
+    animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes anticlockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+@keyframes fadeout {
+    from{opacity: 1;}
+    to {opacity: 0;}
+}

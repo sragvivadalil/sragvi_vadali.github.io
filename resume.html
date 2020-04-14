@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Work Experience</title>
+    <link rel = "icon" href = "Images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href = "style.css">
+  </head>
+  <body>
+    <nav>
+      <div class = "logo">
+        <h4> Work Experience</h4>
+
+      </div>
+      <ul class = "nav-links">
+        <li>
+          <a href = "home.html"> Home</a>
+        </li>
+        <li>
+          <a href = "About_Me.html"> About Me</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn" style = "font-size: 17px;">Projects ▼
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Projects_csp.html">CSP</a>
+              <a href="Projects_poe.html">POE</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href = "#"> Work Experience</a>
+        </li>
+      </ul>
+      <div class = "burger">
+          <div class = "line1"></div>
+          <div class = "line2"></div>
+          <div class = "line3"></div>
+      </div>
+    </nav>
+    <div class = "wrap">
+      <div id = "arrow-left" class = "arrow"></div>
+      <div id = "slider">
+        <div class = "slide slide1res">
+            <div class = "slide-content">
+            <div style="padding-left: 35vh;
+            padding-right: 35vh;
+            padding-bottom: 10vh;
+            text-size: 5vh;
+            color: #800000">
+              <h1 style="text-align:center;">NIF Laboratory<h2>
+              <a href = "#projectimg" id = "link"><img src = "Images/arrow.png" style =  "margin-right: 110vh;margin-top: 6vh;" class = "images"/></a>
+            </div>
+              <div class = "caption">
+              <p>The National Ignition Facility & Photon Science Laboratory in
+                the Lawrence Livermore National Laboratory is a  is the largest
+                and most energetic laser facility ever built. NIF is the size of
+                a sports stadium—three football fields could fit inside. They
+                create fusion reactions on atoms similar to the ones occured in
+                the sun to research the effects and find a more sufficinet energy
+                source. There, welearned the process of producing the lazer and more on
+                new forces of energy that society can use.   </p>
+            </div>
+            </div>
+          </div>
+        <div class = "slide slide2res">
+          <div class = "slide-content">
+            <div style="padding-left: 35vh;
+            padding-right: 35vh;
+            padding-bottom: 10vh;
+            text-size: 5vh;
+            color: #656BB5">
+              <h1 style="text-align:center;">Jet Patriot Flight Team<h2>
+              <a href = "#projectimg" id = "link"><img src = "Images/arrow.png" style =  "margin-right: 110vh;margin-top: 6vh;" class = "images"/></a>
+            </div>
+            <div class = "caption">
+            <p>The Patriots Jet Team Foundation is an all-volunteer non-profit
+              organization dedicated to inspiring students with a
+              love of aviation and aerospace. Here, we were taught about the process of
+              rocket launching and the necessities to launch a man onto the moon. We were also
+              shown the developments of planes to achieve the speed of sound and also
+              planes during the World War 2 era.  </p>
+          </div>
+          </div>
+        </div>
+        <div class = "slide slide3res">
+          <div class = "slide-content">
+            <div style="padding-left: 35vh;
+            padding-right: 35vh;
+            padding-bottom: 10vh;
+            text-size: 5vh;
+            color: #800000">
+              <h1 style="text-align:center;">Chernobyl mission<h2>
+              <a href = "#projectimg" id = "link"><img src = "Images/arrow.png" style =  "filter: invert(100%);margin-right: 110vh;margin-top: 6vh;" class = "images"/></a>
+            </div>
+            <div class = "caption">
+            <p>The Chernobyl disaster was a nuclear accident that occurred on
+              Saturday 26 April 1986, at the No. 4 nuclear reactor in the
+              Chernobyl Nuclear Power Plant, near the city of Pripyat in the
+              north of the Ukrainian SSR. The explosion led to there being a massive amount of radiation in the air.
+              One of our guest speakers, Maynard Holiday, was one of the members who aided in the Chernobyl mission.
+              Their goal was to create a robot that is able to sustain in the high amounts of radiation and
+              collect data from the explosion.    </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "arrow-right" class = "arrow"></div>
+
+   <!-- <script src="script.js" charset="utf-8"></script> -->
+   <div class="contact-area" id =  "contact">
+
+
+    <div class="text-part">
+      <p style = "font-size: 120%;">During my time in the engineering program, I
+        have met a number of industry professionals through workplace field trips
+        and guest speakers. One engineering field I am interested in is Civil
+        Engineering. Emma Schoental, a civil engineer, came to our school as a
+        guest speaker on this topic. She explained the multiple types of civil
+        engineers, as well as types of projects that they work on. This guest
+        speaker showed my the daily life of civil engineers and I was imspired
+        by the process involved in a project and the use of simulation and
+        AutoDesk, showing the need for numerous engineering principles involved
+        in a single project. One field trip that I attended is the Jet Patriot
+        Flight Hanger. There, we were taught about the process of rocket launching
+        and the necessities to launch a man onto the moon by the many volunteers
+        of the Patriots Jet Team Foundation.  </p>
+      <br>
+      <div>
+        <p style = "font-size: 110%" id = "projectimg">Link to a printible copy of the resume is <a href = "Resume.pdf" target="_blank">here</a></p>
+      </div>
+    </div>
+    </div>
+    <script>
+    let sliderImages = document.querySelectorAll('.slide'),
+         arrowLeft = document.querySelector('#arrow-left'),
+         arrowRight = document.querySelector('#arrow-right'),
+         current = 0
+         i = 0;
+    var time = 10000;
+    //Clear all images
+    function reset(){
+      for (i = 0; i < sliderImages.length; i++) {
+         sliderImages[i].style.display = 'none';
+         }
+
+    }
+    //initialize slider
+    function  startSlide(){
+      reset();
+      sliderImages[0].style.display = 'block';
+    }
+    function changeImg(){
+      reset();
+      sliderImages[current].style.display = 'block';
+      current ++;
+      setTimeout('changeImg()', time);
+      if(current === 3){
+        current = 0;
+      }
+    }
+    //Show previous slide
+    function slideLeft(){
+     reset();
+     sliderImages[current - 1].style.display = 'block';
+     current --;
+     }
+
+     //Show next slide
+     function slideRight(){
+       reset();
+       sliderImages[current + 1].style.display = 'block';
+       current ++;
+     }
+
+     //Left arrow click
+     arrowLeft.addEventListener('click', function(){
+     if (current === 0){
+       current = 3;
+     }
+     slideLeft();
+     })
+     //Right arrow click
+     arrowRight.addEventListener('click', function(){
+     if (current === 2){
+       current = -1;
+     }
+     slideRight();
+     })
+
+
+
+
+    startSlide();
+
+    window.onload = changeImg;
+    </script>
+
+  </body>
+
+  </html>
