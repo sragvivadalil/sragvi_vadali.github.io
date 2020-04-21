@@ -113,7 +113,7 @@
    <div id = "arrow-right" class = "arrow"></div>
     <div class = "about-area" id = "about" >
        <div class = "text-part">
-         <div id = "projectimg" style = "float: right;">
+         <div class = "projectimg" style = "float: right;">
            <a href = "https://scratch.mit.edu/projects/244907034/#editor" target = "_blank">
                   <img class = "scratch" style = "height: 100px; text-align:center;" src = "Images/scratch.png"/>
                 </a>
@@ -235,7 +235,7 @@
       sliderImages[current].style.display = 'block';
       current ++;
       setTimeout('changeImg()', time);
-      if(current === 2){
+      if(current === 3){
         current = 0;
       }
     }
@@ -259,14 +259,14 @@
      //Left arrow click
      arrowLeft.addEventListener('click', function(){
      if (current === 0){
-       current = 2;
+       current = 3;
      }
 
      slideLeft();
      })
      //Right arrow click
      arrowRight.addEventListener('click', function(){
-     if (current === 0){
+     if (current === 2){
        current = -1;
      }
      slideRight();
